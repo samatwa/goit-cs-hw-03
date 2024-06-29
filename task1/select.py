@@ -328,7 +328,7 @@ if __name__ == '__main__':
         tasks_by_status = select_tasks_by_status(conn, status_name)
         print(tasks_by_status)
 
-        task_id = 18
+        task_id = 8
         new_status_name = 'in progress'
         update_task_status(conn, task_id, new_status_name)
 
@@ -346,7 +346,7 @@ if __name__ == '__main__':
         id = 1
         delete_task(conn, id)
 
-        email_pattern = 'grahamsusan@example.com'
+        email = 'grahamsusan@example.com'
         print(f"\nUsers with email like '{email}':")
         users_by_email = select_users_by_email(conn, email)
         print(users_by_email)
